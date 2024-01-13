@@ -1,4 +1,11 @@
 .bgImg{
-    background-image: url(../../assets/hero-desktop.jpg);
+    background-image: url("../../assets/hero-desktop.jpg");
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    /* background-image: url("./assets/bg-pattern-desktop.svg"),
+      linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%)); */
+    background-repeat: no-repeat;
+    background-size: 50vw;
 
 }

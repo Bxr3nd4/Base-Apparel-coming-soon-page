@@ -16,16 +16,18 @@ function LeftPanel() {
   };
 
   return (
-    <div className={styles.leftPanelContainer}>
-      <h1>we're</h1>
-      <h1>
-        Coming <br /> soon
-      </h1>
-      <p>
-        Hello fellow shoppers! We're currently building our new <br /> fashion
-        store. Add your email below to stay up-to-date with <br /> announcements
-        and our launch deals.
-      </p>
+    <div className={styles.leftContent}>
+      <div className={styles.textContent}>
+        <h1 className={styles.title}>we're</h1>
+        <h1 className={styles.secondTitle}>
+          Coming <br /> soon
+        </h1>
+        <p>
+          Hello fellow shoppers! We're currently building our new <br /> fashion
+          store. Add your email below to stay up-to-date with <br />{" "}
+          announcements and our launch deals.
+        </p>
+      </div>
 
       <div>
         <input
@@ -34,7 +36,7 @@ function LeftPanel() {
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Email Address"
         />
-        <button onClick={validateEmail}>Validar</button>
+        <button onClick={validateEmail} className={styles.imgValidate}></button>
         <p>{message}</p>
       </div>
     </div>

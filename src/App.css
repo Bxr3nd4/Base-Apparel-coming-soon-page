@@ -2,8 +2,9 @@
   display: flex;
   width: 100vw;
   height: 100vh;
-  background-image: url("./assets/bg-pattern-desktop.svg"), linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  background-image: url("./assets/bg-pattern-desktop.svg"),
+    linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
   background-repeat: no-repeat;
   background-position: bottom left;
-  background-size: 66vw;
+  background-size: 50vw;
 }
