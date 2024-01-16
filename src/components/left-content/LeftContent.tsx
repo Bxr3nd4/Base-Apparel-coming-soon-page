@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styles from "./LeftContent.module.css";
+import btn from "../../assets/icon-arrow.svg";
 
 function LeftPanel() {
   const [email, setEmail] = useState("");
@@ -29,14 +30,16 @@ function LeftPanel() {
         </p>
       </div>
 
-      <div>
+      <div className={styles.input}>
         <input
           type="text"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Email Address"
         />
-        <button onClick={validateEmail} className={styles.imgValidate}></button>
+        <button onClick={validateEmail} className={styles.imgValidate}>
+          <img src={btn} />
+        </button>
         <p>{message}</p>
       </div>
     </div>
